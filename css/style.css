@@ -1378,12 +1378,12 @@ img {
 
 .single-item .slick-arrow.slick-prev {
   left: 0;
-  background: url(../../img/slide-icons/pagination-arrow-left.svg) 0 0/100% no-repeat;
+  background: url(../img/slide-icons/pagination-arrow-left.svg) 0 0/100% no-repeat;
 }
 
 .single-item .slick-arrow.slick-next {
   right: 0;
-  background: url(../../img/slide-icons/pagination-arrow-right.svg) 0 0/100% no-repeat;
+  background: url(../img/slide-icons/pagination-arrow-right.svg) 0 0/100% no-repeat;
 }
 
 .single-item .slick-arrow.slick-disabled {
@@ -1528,7 +1528,7 @@ img {
 .map {
   position: relative;
   padding-top: 59px;
-  background-image: url(../../img/map.jpg);
+  background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
