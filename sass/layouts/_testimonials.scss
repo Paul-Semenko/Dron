@@ -1,0 +1,274 @@
+.testimonials {
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+}
+
+.testimonials__repositioning {
+  @include mobile {
+    margin-bottom: 30px;
+  }
+  @include tablet {
+    margin-bottom: 50px;
+  }
+  @include desktop {
+    margin-bottom: 76px;
+  }
+}
+
+/*-------------- Слайдер ------------------- */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+}
+.slick-dots li {
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+}
+/* Элемент точки */
+.slick-dots li button {
+}
+
+.slider__item {
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  @include mobile {
+    width: 280px;
+    height: 500px;
+    padding: 10px;
+  }
+  @include tablet {
+    width: 670px;
+    height: 325px;
+    padding: 15px;
+  }
+  @include desktop {
+    width: 770px;
+    height: 340px;
+    padding: 20px;
+  }
+}
+.item-wrap {
+  background-image: url(../../img/slide-icons/background-card.png);
+  background-repeat: no-repeat;
+  @include mobile {
+    background-image: none;
+    width: 240px;
+    height: 460px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 20px;
+  }
+  @include tablet {
+    background-size: contain;
+    width: 630px;
+    height: 290px;
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-left: 35px;
+  }
+  @include desktop {
+    width: 730px;
+    height: 300px;
+    padding-top: 40px;
+    padding-right: 60px;
+    padding-left: 40px;
+  }
+}
+.single-item .slider__item:not(:last-child) {
+  @include mobile {
+    margin-right: 50px;
+  }
+  @include tablet {
+  }
+  margin-right: 75px;
+  @include desktop {
+    margin-right: 220px;
+  }
+}
+/*-----------Конкретный слайдер -----------*/
+.single-item {
+  position: relative;
+}
+.single-item .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 34px;
+  height: 34px;
+  border: none;
+}
+.single-item .slick-arrow.slick-prev {
+  left: 0;
+  background: url(../../img/slide-icons/pagination-arrow-left.svg) 0 0 / 100%
+    no-repeat;
+}
+.single-item .slick-arrow.slick-next {
+  right: 0;
+  background: url(../../img/slide-icons/pagination-arrow-right.svg) 0 0 / 100%
+    no-repeat;
+}
+.single-item .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+.single-item .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-item .slick-dots li {
+  list-style: none;
+}
+.single-item .slick-dots button {
+  width: 14px;
+  height: 14px;
+  font-size: 0;
+  border: 1px solid var(--button-color);
+  border-radius: 50%;
+  background-color: var(--main-background-color);
+}
+
+.single-item .slick-dots li:not(:last-child) {
+  margin-right: 10px;
+}
+.slick-dots {
+  margin-bottom: 0;
+  padding: 0;
+  @include mobile {
+    margin-top: 25px;
+  }
+  @include tablet {
+    margin-top: 40px;
+  }
+  @include desktop {
+    margin-top: 60px;
+  }
+}
+.single-item .slick-dots li.slick-active button {
+  background-color: var(--button-color);
+}
+/*---------------Настройка контента внутри слайдера ------------ */
+.slider-content {
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include tablet {
+    flex-direction: row;
+  }
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.slider-list:not(:last-child) {
+  margin-right: 50px;
+  @include mobile {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.slider-text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--title-color);
+
+  @include mobile {
+    font-size: 14px;
+    text-align: justify;
+  }
+  @include tablet {
+    font-size: 16px;
+    text-align: left;
+  }
+  @include desktop {
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+.slider-sub-title {
+  margin-top: 19px;
+  margin-left: 182px;
+  margin-right: 344px;
+  width: 145px;
+  height: 97px;
+  @include mobile {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: auto;
+  }
+}
+.position-name {
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.16;
+}
+
+.position-occupation {
+  margin-bottom: 11px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--title-color);
+  opacity: 0.5;
+}

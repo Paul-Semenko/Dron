@@ -1,0 +1,26 @@
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: var(--hover-focus);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+  z-index: 99;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+  color: var(--button-color);
+  &:hover,
+  &focus {
+    color: var(--main-background-color);
+  }
+}

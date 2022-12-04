@@ -1,0 +1,119 @@
+.map {
+  position: relative;
+  padding-top: 59px;
+  background-image: url(../../img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;  
+  background-position: top center;
+  height: 810px;
+  width: 100%;
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+.map__title {
+  position: absolute;
+  margin-bottom: 0;
+  padding: 29.5px 50px;
+  top: 59px;
+  right: 787px;
+  width: 300px;
+  height: 100px;
+  background-color: #fff;
+}
+.map__pointer {
+  fill: #d8082d;
+  width: 53px;
+  height: 76px;
+  transform: translate(1046%, 348%);
+}
+.map__position {
+  width: 417px;
+  height: 306px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 57px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-bottom: 69px;
+  border-radius: 2px;
+  background-color: var(--main-background-color);
+  transform: translate(68%, 37%);
+}
+.map__sub-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.41;
+  color: var(--title-color);
+  text-transform: uppercase;
+}
+.list__item:not(:last-child) {
+  margin-bottom: 17px;
+}
+.map__links {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: var(--title-color);
+  opacity: 0.5;
+  transition: color, var(--animation);
+  @include mobile {
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    opacity: 1;
+  }
+  @include tablet {
+    justify-content: center;
+    font-size: 20px;
+    opacity: 1;
+  }
+}
+.map__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-right: 32px;
+  width: 22px;
+  height: 18px;
+  fill: var(--title-color);
+  @include mobile {
+    width: 44px;
+    height: 44px;
+  }
+}
+.map__links:hover,
+.map__links:focus {
+  color: var(--hover-focus);
+  opacity: none;
+}
+.map__links--discoloring {
+  @include mobile {
+    color: var(--main-background-color);
+  }
+  @include tablet {
+    color: var(--main-background-color);
+  }
+}
+// ------------ Mobile version of map ------//
+.map-links__mobile {
+  @include mobile {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  @include tablet {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    display: none;
+  }
+}

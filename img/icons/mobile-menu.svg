@@ -1,0 +1,12 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-menu-close" viewBox="0 0 32 32">
+<path d="M31.439 3.166l-3.166-3.166-12.553 12.553-12.553-12.553-3.166 3.166 12.553 12.553-12.553 12.553 3.166 3.166 12.553-12.553 12.553 12.553 3.166-3.166-12.553-12.553 12.553-12.553z"></path>
+</symbol>
+<symbol id="icon-menu" viewBox="0 0 64 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M3.429 0h56c1.894 0 3.429 1.535 3.429 3.429v0c0 1.894-1.535 3.429-3.429 3.429h-56c-1.894 0-3.429-1.535-3.429-3.429v0c0-1.894 1.535-3.429 3.429-3.429z"></path>
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M3.429 12.571h56c1.894 0 3.429 1.535 3.429 3.429v0c0 1.894-1.535 3.429-3.429 3.429h-56c-1.894 0-3.429-1.535-3.429-3.429v0c0-1.894 1.535-3.429 3.429-3.429z"></path>
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M3.429 25.143h56c1.894 0 3.429 1.535 3.429 3.429v0c0 1.894-1.535 3.429-3.429 3.429h-56c-1.894 0-3.429-1.535-3.429-3.429v0c0-1.894 1.535-3.429 3.429-3.429z"></path>
+</symbol>
+</defs>
+</svg>

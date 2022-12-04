@@ -1,0 +1,63 @@
+.btn-primary {
+  line-height: 1.166;
+  text-align: center;
+  color: var(--main-background-color);
+  background-color: var(--button-color);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color, color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--button-color);
+    background-color: var(--hover-focus);
+  }
+  @include mobile {
+    padding: 15px 34px;
+    font-size: 18px;
+  }
+  @include tablet {
+    padding: 15px 38px;
+    font-size: 20px;
+  }
+  @include desktop {
+    padding: 15px 44px;
+    font-size: 24px;
+  }
+}
+.search-input {
+  border: none;
+  border-left: 1px solid #fff;
+  background: transparent;
+  color: var(--main-background-color);
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    margin-left: 60px;
+    width: 39px;
+    height: 24.95px;
+  }
+}
+.header-button {
+  background: transparent;
+  border: none;
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+
+.fa-search {
+  color: var(--main-background-color);
+}
+.fa-search:hover,
+.fa-search:focus {
+  color: var(--hover-focus);
+}
