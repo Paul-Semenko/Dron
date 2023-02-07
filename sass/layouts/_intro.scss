@@ -3,8 +3,9 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-color: #444;
-  
-
+  @include retina2 {
+      background-image: url(../img/intro-bg@2x.jpg);
+    }
   @include mobile {
     height: 470px;
     padding-top: 63px;
@@ -20,6 +21,7 @@
     height: 750px;
     padding-top: 163px;
     padding-bottom: 140px;
+    
   }
 }
 

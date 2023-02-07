@@ -7,6 +7,9 @@
   background-position: top center;
   height: 810px;
   width: 100%;
+  @include retina2{
+    background-image: url(../img/map@2x.jpg);
+  }
   @include mobile {
     display: none;
   }

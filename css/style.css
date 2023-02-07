@@ -622,6 +622,11 @@ img {
   background-position: top center;
   background-color: #444;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .intro {
+    background-image: url(../img/intro-bg@2x.jpg);
+  }
+}
 @media screen and (max-width: 767.98px) and (min-width: 320px) {
   .intro {
     height: 470px;
@@ -910,6 +915,11 @@ img {
   width: 100%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .img-section {
+    background-image: linear-gradient(0deg, rgba(8, 39, 62, 0.5), rgba(8, 39, 62, 0.5)), url(../img/dron-sky@2x.jpg);
+  }
+}
 @media screen and (max-width: 767.98px) and (min-width: 320px) {
   .img-section {
     display: none;
@@ -1106,6 +1116,11 @@ img {
   background-position: top center;
   width: 100%;
   height: 690px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .contact-us {
+    background-image: url(../img/contact-bg@2x.jpg), linear-gradient(0deg, rgba(3, 19, 31, 0.85), rgba(3, 19, 31, 0.85));
+  }
 }
 
 .contact-form {
@@ -1534,6 +1549,11 @@ img {
   background-position: top center;
   height: 810px;
   width: 100%;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .map {
+    background-image: url(../img/map@2x.jpg);
+  }
 }
 @media screen and (max-width: 767.98px) and (min-width: 320px) {
   .map {
