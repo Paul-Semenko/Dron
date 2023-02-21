@@ -67,7 +67,7 @@
   text-decoration: none;
   color: var(--title-color);
   opacity: 0.5;
-  transition: color, var(--animation);
+  transition: transform, color, var(--animation);
   @include mobile {
     text-align: center;
     justify-content: center;
@@ -79,6 +79,11 @@
     font-size: 20px;
     opacity: 1;
   }
+    &:hover,
+    &:focus{
+      color: var(--hover-focus);
+      transform: scale(1.15);
+    }
 }
 .map__icon {
   display: flex;
@@ -88,15 +93,17 @@
   width: 22px;
   height: 18px;
   fill: var(--title-color);
+  transition: transform, fill var(--animation) ;
   @include mobile {
     width: 44px;
     height: 44px;
   }
 }
-.map__links:hover,
-.map__links:focus {
-  color: var(--hover-focus);
+.map__links:hover .map__icon,
+.map__links:focus .map__icon {  
+  fill: var(--hover-focus);
   opacity: none;
+  transform: scale(1.15);
 }
 .map__links--discoloring {
   @include mobile {

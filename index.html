@@ -29,25 +29,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link
-      href="/node_modules/@pnotify/core/dist/BrightTheme.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="/node_modules/@pnotify/core/dist/PNotify.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="/node_modules/@pnotify/mobile/dist/PNotifyMobile.css"
-      rel="stylesheet"
-      type="text/css"
-    />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Main Stylesheet File -->
     <link href="css/style.min.css" rel="stylesheet" />
@@ -146,6 +131,7 @@
                 </button></a
               >
             </div>
+
             <div class="intro-image">
               <img
                 src="img/Drone-1.png"
@@ -169,12 +155,15 @@
             обробкою фото і публікацій 3D-панорам в необхідних форматах
           </p>
           <div class="wrap">
-            <div class="service__item mobile--disappearing">
+            <div
+              class="service__item mobile--disappearing"
+              data-aos="fade-right"
+            >
               <picture>
                 <img src="img/servise-01.png" alt="" width="417" height="328" />
               </picture>
             </div>
-            <div class="service__item">
+            <div class="service__item" data-aos="fade-left">
               <h3 class="services__sub-title">Фотографія</h3>
               <p class="services-content">
                 Дрон може підніматися на висоту до 2500 метрів, на його борту
@@ -186,7 +175,7 @@
             </div>
           </div>
           <div class="wrap">
-            <div class="wrap__item--indent">
+            <div class="wrap__item--indent" data-aos="fade-up-right">
               <h3 class="services__sub-title">Відеозйомка</h3>
               <p class="services-content">
                 Перевага відео з повітря в тому, що камера у своїй роботі
@@ -196,7 +185,10 @@
                 сценою, де відбуваються події і т. д.
               </p>
             </div>
-            <div class="wrap__item--indent mobile--disappearing">
+            <div
+              class="wrap__item--indent mobile--disappearing"
+              data-aos="fade-up-left"
+            >
               <picture>
                 <img
                   src="img/servise-02.png "
@@ -209,7 +201,10 @@
             </div>
           </div>
           <div class="wrap">
-            <div class="service__item mobile--disappearing">
+            <div
+              class="service__item mobile--disappearing"
+              data-aos="fade-down-right"
+            >
               <picture>
                 <img
                   src="img/servise-03.png "
@@ -219,7 +214,7 @@
                 />
               </picture>
             </div>
-            <div class="service__item">
+            <div class="service__item" data-aos="fade-down-left">
               <h3 class="services__sub-title">3D-ПАНОРАМИ</h3>
               <p class="services-content">
                 Віртуальні тури і створення 3D панорам від Drone-це нові
@@ -231,7 +226,10 @@
             </div>
           </div>
           <div class="wrap">
-            <div class="wrap__item--indent wrap__item--repositioning">
+            <div
+              class="wrap__item--indent wrap__item--repositioning"
+              data-aos="fade-up"
+            >
               <h3 class="services__sub-title">ФОТОГРАММЕТРІЯ</h3>
               <p class="services-content">
                 Заміри параметрів будівель, обстеження посівних, перевірка ліній
@@ -243,6 +241,7 @@
             </div>
             <div
               class="wrap__item--indent wrap__item--repositioning mobile--disappearing"
+              data-aos="fade-down"
             >
               <picture>
                 <img
@@ -320,7 +319,12 @@
           >
             пов'язане з аерозйомкою
           </p>
-          <form class="contact-form js-form" action="" novalidate>
+          <form
+            class="contact-form js-form"
+            action=""
+            novalidate
+            data-aos="fade-down-right"
+          >
             <input
               type="text "
               name="username"
@@ -349,7 +353,7 @@
               Отримати консультацію
             </button>
           </form>
-          <div class="wrap-img">
+          <div class="wrap-img" data-aos="zoom-in-down">
             <img
               src="./img/contact-dron.jpg"
               width="592"
@@ -652,13 +656,6 @@
 
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/mobile-nav/mobile-nav.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
 
     <!-- Template Main Javascript File -->
     <script src="js/menu.js"></script>
@@ -669,5 +666,9 @@
 
     <!--  nav-->
     <script src="lib/nav/nav.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
