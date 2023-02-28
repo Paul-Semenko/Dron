@@ -32,7 +32,11 @@
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+      id="aos-css"
+    />
 
     <!-- Main Stylesheet File -->
     <link href="css/style.min.css" rel="stylesheet" />
@@ -680,7 +684,9 @@
     <script src="lib/nav/nav.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        disable: "mobile",
+      });
     </script>
   </body>
 </html>
